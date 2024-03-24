@@ -14,10 +14,23 @@ class Homepage extends StatelessWidget {
           height: MediaQuery.of(context).size.height,
           color: darkbackgroundColor,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(padding: EdgeInsets.only(top: 30, left: 20, right: 20)),
-              SizedBox()
+             Padding(padding: EdgeInsets.all(20)),
+            
+             SizedBox(
+               
+                height: 40,
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 30),
+                  color:darkbackgroundColor2 ,
+                  child: Row(children: [
+                    Text("Search services", style:TextStyle(color:Color.fromRGBO(255, 255, 255, 20), fontSize: 12) ),
+                    
+                  ],),
+                ),
+              )
             ],
           ),
         )),
